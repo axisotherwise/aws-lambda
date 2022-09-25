@@ -1,6 +1,8 @@
 const AWS = require('aws-sdk');
 const sharp = require('sharp');
 
+AWS.config.update();
+
 const s3 = new AWS.S3();
 
 exports.handler = async (event, context, callback) => {
